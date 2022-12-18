@@ -30,6 +30,15 @@
   div > button:hover {
     filter: brightness(0.9);
   }
+
+  @media (max-width: 900px){
+      padding: 10px 50px;
+
+      div > button {
+      display: none;
+    }
+}
+
 }
 
 .container {
@@ -37,6 +46,12 @@
   flex-direction: row;
   background-color: #fff3e4;
   height: 100%;
+
+    @media (max-width: 1250px){
+      #image {
+        display: none;
+      }
+    }
 }
 
 main {
@@ -64,6 +79,13 @@ main {
       filter: brightness(0.9);
     }
   }
+    @media (max-width: 900px){
+      padding: 100px 50px;
+
+      > section {
+        width: 330px;
+      }
+    }
 }
 #featuredImage {
   width: 700px;
@@ -73,6 +95,10 @@ h1 {
   margin: 0;
   color: #2f327d;
   font-size: 54px;
+
+     @media (max-width: 900px){
+      font-size: 30px;
+    }
 }
 
 h2 {
@@ -110,6 +136,8 @@ h2 {
   display: flex;
   gap: 100px;
 
+
+
   .card {
     width: 450px;
     height: 430px;
@@ -133,7 +161,11 @@ h2 {
       width: 250px;
       position: absolute;
       margin-bottom: 420px;
-      margin-left: 100px;
+      margin-left: 98px;
+      @media (max-width: 1919px) {
+        display: none;
+      }
+      
     }
 
      div {
@@ -145,4 +177,16 @@ h2 {
       }
     }
   }
+    @media (max-width: 1200px) {
+        flex-direction: column;
+        padding: 150px 50px;
+
+        .card {
+          width: 300px;
+          padding: 10px;
+        }
+      }
+       @media (max-width: 600px) {
+          padding: 40px;
+      }
 }
