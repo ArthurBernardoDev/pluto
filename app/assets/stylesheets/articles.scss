@@ -12,7 +12,7 @@
   align-items: center;
   padding: 10px 200px;
 
-  div > button {
+  div > a > button {
     width: 150px;
     height: 60px;
     border-radius: 80px;
@@ -20,14 +20,14 @@
     font-size: 18px;
   }
 
-  div > #login {
+  div > a > #login {
     background-color: #ffffff;
     margin-right: 10px;
   }
-  div > #sign_up {
+  div > a >#sign_up {
     background-color: #f48c06;
   }
-  div > button:hover {
+  div > a >button:hover {
     filter: brightness(0.9);
   }
 
